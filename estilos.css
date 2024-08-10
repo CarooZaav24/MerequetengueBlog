@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Lusitana:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Beth+Ellen&family=Lusitana:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("IMAGENES BLOG/fondo\ hojas.webp");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    font-family: "Lusitana", serif;
+}
+
+.contenedor{
+   max-width: 1000px;
+   width: 90%;
+   background-color:;
+   margin: 20px 0;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin:auto;
+}
+
+header{
+    width: 100%;
+    background-color: #90a955;
+    color: #132a13;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+header .menu{
+    background-color: rgba(255,255,255,.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*CHECAR EL TEMA DEL HEADER Y PORQUÉ NO SE ACOMODA*/
+
+header .menu a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 18px;
+}
+
+header .menu a:hover{
+    text-decoration: underline;
+}
+
+.listaMenu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.main{
+    background-color: #ecf39e;
+    padding: 20px;
+    width: 70%;
+}
+
+.main article .imagenMain{
+    margin-bottom: 20px;
+}
+
+.main article .imagenMain img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.main article h2{
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 40px;
+    font-family:"Arsenal SC", sans-serif;
+    text-align: center;
+}
+
+.main article p{
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: justify;
+    color:#474747
+}
+
+.main article .videoMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top:20px;
+    padding: 20px;
+}
+.main article .imagenesDefinicionSenderismo{
+    margin-bottom: 20px;
+}
+
+.main article .imagenesDefinicionSenderismo img{
+    width: 100%;
+    vertical-align: top;
+}
+
+aside{
+    background-color: rgba(188, 71, 73,.5);
+    color:#132a13
+    padding: 30px;
+    width: 30%;
+    overflow: hidden;
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+h1{
+    font-family: "Beth Ellen", cursive;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 45px;
+    color:#fff
+}
+
+aside .widget{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    padding: 50px 10px;
+    line-height: 50px;
+}
+
+aside .widget a{
+    text-decoration:none;
+    color:#474747
+}
+
+h2{
+    color: #474747;
+}
+aside .widget a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    margin:20px 0;
+    background-color: rgba(255,255,255,.5);
+    padding:20px;
+    width: 100%;
+}
+
+@media screen and (max-width:1030px){
+    header{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    header .menu{
+        width:100%;
+        background: rgba(255,255,255,.2);
+        text-align: center;
+        padding:20px;
+
+    }
+}
+    
+
+@media screen and (max-width: 800px){
+    .main{
+        width:100%;
+    }
+    aside{
+        width:100%;    
+    }
+}
+
